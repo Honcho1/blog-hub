@@ -83,7 +83,6 @@ const Home: React.FC = () => {
                     <SelectValue placeholder="All Categories" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">All Categories</SelectItem>
                     {categories.map((category) => (
                       <SelectItem key={category} value={category}>
                         {category}
@@ -100,7 +99,6 @@ const Home: React.FC = () => {
                     <SelectValue placeholder="All Tags" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">All Tags</SelectItem>
                     {allTags.map((tag) => (
                       <SelectItem key={tag} value={tag}>
                         {tag}
