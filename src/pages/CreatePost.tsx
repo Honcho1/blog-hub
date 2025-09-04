@@ -133,7 +133,7 @@ const CreatePost: React.FC = () => {
             {isEditing ? 'Edit Post' : 'Create New Post'}
           </h1>
           <p className="text-muted-foreground">
-            {isEditing ? 'Update your blog post' : 'Share your SEO knowledge with the community'}
+            {isEditing ? 'Update your blog post' : 'Share your knowledge with the community across any topic or industry'}
           </p>
         </div>
 
@@ -164,7 +164,7 @@ const CreatePost: React.FC = () => {
               <CardContent>
                 <Input
                   type="text"
-                  placeholder="e.g. SEO Basics, On-Page SEO..."
+                  placeholder="e.g. Technology, Business, Lifestyle..."
                   value={category}
                   onChange={(e) => setCategory(e.target.value)}
                   list="categories"

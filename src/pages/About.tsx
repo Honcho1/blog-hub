@@ -9,10 +9,10 @@ const About: React.FC = () => {
       <section className="bg-gradient-hero text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            About SEO Blog Hub
+            About Blog Hub
           </h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Your ultimate destination for SEO knowledge, strategies, and insights that drive real results.
+            Your ultimate destination for knowledge, strategies, and insights across all topics.
           </p>
         </div>
       </section>
@@ -23,8 +23,8 @@ const About: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-4">Our Mission</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We're dedicated to democratizing SEO knowledge and empowering businesses of all sizes 
-              to achieve online success through effective search engine optimization.
+              We're dedicated to democratizing knowledge sharing and empowering individuals and businesses of all sizes 
+              to achieve success through effective content creation and knowledge exchange.
             </p>
           </div>
 
@@ -40,7 +40,7 @@ const About: React.FC = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Cutting-edge SEO strategies and tactics backed by real-world experience and data-driven results.
+                  Cutting-edge strategies and tactics backed by real-world experience and data-driven results across various industries.
                 </p>
               </CardContent>
             </Card>
@@ -84,7 +84,7 @@ const About: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-4">What We Cover</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              From technical SEO fundamentals to advanced growth strategies, we cover every aspect of search engine optimization.
+              From fundamentals to advanced strategies, we cover every aspect of knowledge sharing and content creation across multiple domains.
             </p>
           </div>
 
@@ -171,8 +171,8 @@ const About: React.FC = () => {
         <section className="text-center bg-gradient-card rounded-lg p-12 shadow-card">
           <h2 className="text-4xl font-bold text-foreground mb-4">Join Our Community</h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            SEO Blog Hub is more than just a blog—it's a community of marketers, business owners, 
-            and SEO enthusiasts sharing knowledge and growing together.
+            Blog Hub is more than just a blog—it's a community of creators, entrepreneurs, 
+            and knowledge enthusiasts sharing insights and growing together.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">

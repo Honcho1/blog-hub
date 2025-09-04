@@ -43,10 +43,10 @@ const Home: React.FC = () => {
       <section className="bg-gradient-hero text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            SEO Blog Hub
+            Blog Hub
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Discover the latest SEO strategies, tips, and insights to boost your online presence and dominate search rankings.
+            Discover the latest strategies, tips, and insights across all topics to expand your knowledge and grow your expertise.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
             <div className="relative flex-1">
@@ -159,12 +159,12 @@ const Home: React.FC = () => {
           <h2 className="text-2xl font-bold text-foreground">
             {hasActiveFilters ? `Search Results (${filteredPosts.length})` : `Latest Blog Posts (${filteredPosts.length})`}
           </h2>
-          <p className="text-muted-foreground mt-1">
-            {hasActiveFilters 
-              ? 'Posts matching your filters'
-              : 'Stay updated with the latest SEO strategies and insights'
-            }
-          </p>
+            <p className="text-muted-foreground mt-1">
+              {hasActiveFilters 
+                ? 'Posts matching your filters'
+                : 'Stay updated with the latest strategies and insights across all topics'
+              }
+            </p>
         </div>
 
         {/* Posts Grid */}
