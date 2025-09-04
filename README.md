@@ -1,6 +1,6 @@
 # Welcome To This Multi Blog Hub Project
 
-## Project info: 📝 React Blog Web Application
+## Project info: 📝Blog Web Application
 A modern, responsive Blog Web Application built with React and Tailwind CSS. This app allows users to create, edit, delete, and view blog posts, with posts stored in localStorage for persistence across sessions. It comes preloaded with 5 full SEO blog posts (500–800 words each), properly formatted with headings, bold/italic text, categories, and tags — serving as examples for users to learn from.
 
 **URL**: https://multibloghub.netlify.app/
