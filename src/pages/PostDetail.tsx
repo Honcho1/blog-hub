@@ -1,10 +1,11 @@
 import React from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, Clock, Tag, Edit, Trash2, Share2 } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, Tag, Edit, Trash2 } from 'lucide-react';
 import { useBlog } from '../contexts/BlogContext';
 import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
 import { useToast } from '../hooks/use-toast';
+import { ShareButton } from '../components/ShareButton';
 
 const PostDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -40,26 +41,6 @@ const PostDetail: React.FC = () => {
     }
   };
 
-  const handleShare = async () => {
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: post.title,
-          text: post.excerpt,
-          url: window.location.href,
-        });
-      } catch (error) {
-        // User cancelled or error occurred
-      }
-    } else {
-      // Fallback: copy URL to clipboard
-      navigator.clipboard.writeText(window.location.href);
-      toast({
-        title: "Link Copied",
-        description: "The post link has been copied to your clipboard.",
-      });
-    }
-  };
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString('en-US', {
@@ -132,14 +113,12 @@ const PostDetail: React.FC = () => {
                 <span>Edit</span>
               </Button>
             </Link>
-            <Button
+            <ShareButton
+              title={post.title}
+              text={post.excerpt}
+              url={window.location.href}
               variant="outline"
-              onClick={handleShare}
-              className="flex items-center space-x-2"
-            >
-              <Share2 className="h-4 w-4" />
-              <span>Share</span>
-            </Button>
+            />
             <Button
               variant="destructive"
               onClick={handleDelete}
@@ -169,10 +148,12 @@ const PostDetail: React.FC = () => {
               Share it with others who might benefit from these SEO insights.
             </p>
             <div className="flex space-x-3">
-              <Button onClick={handleShare} className="flex items-center space-x-2">
-                <Share2 className="h-4 w-4" />
-                <span>Share Article</span>
-              </Button>
+              <ShareButton
+                title={post.title}
+                text={post.excerpt}
+                url={window.location.href}
+                variant="default"
+              />
               <Link to="/">
                 <Button variant="outline">
                   Read More Articles
