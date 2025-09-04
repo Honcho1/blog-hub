@@ -136,7 +136,7 @@
 
   /* Blog Content Styles */
   .blog-content {
-    @apply prose prose-gray max-w-none prose-headings:text-foreground prose-p:text-foreground prose-strong:text-foreground prose-em:text-muted-foreground prose-a:text-primary hover:prose-a:text-primary-hover prose-ul:text-foreground prose-ol:text-foreground;
+    @apply prose prose-slate max-w-none prose-headings:text-foreground prose-p:text-foreground prose-strong:text-foreground prose-em:text-muted-foreground prose-a:text-primary hover:prose-a:text-primary-hover prose-ul:text-foreground prose-ol:text-foreground;
   }
 
   .blog-content h1 {
